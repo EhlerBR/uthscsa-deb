@@ -1,8 +1,19 @@
-######## pagination.r ##########
-# paginate function            #
-# Author: Benjamin Ehler       #
-# Date: 29 May 2012            #
-################################
+##############################################################################
+# University of Texas Health Science Center at San Antonio
+# Department of Epidemiology and Biostatistics
+##############################################################################
+# Filename: paginate.r
+# Author: Benjamin Ehler
+# Project Name: Shared Functions
+# Input: data.table
+#        panel.column
+#        page.length
+# Output: $table: The same table but with the added column, page (list element, data.frame)
+#         $pages: The page numbers (list element, numeric vector)
+#
+# Modification History:
+# v 0.1 Creation 29 May 2012
+##############################################################################
 
 paginate <- function(data.table, panel.column, page.length){
   paginated.table <- NULL
