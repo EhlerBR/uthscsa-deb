@@ -12,6 +12,8 @@
 # v 1.0 Creation                              
 ##############################################################################
 
+# Because of the change from numeric to character, this needs to be copied to a character vector to be generalized #
+
 FormatPValue <- function(p.values){
   if (is.numeric(p.values)){
     if (is.matrix(p.values)){
